@@ -1,36 +1,23 @@
-# Welcome to Remix + Vite!
+# Rated list
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
+That project is inspired by <https://tiermaker.com/>.
 
-## Development
+## Plan
 
-Run the Vite dev server:
+- [ ] Main UI
+  - [x] Tailwind
+  - [ ] Main routes
+- [ ] DnD components
+  - [ ] Types
+  - [ ] Components
+  - [ ] Layout
 
-```shellscript
-npm run dev
-```
+## Tech stack
 
-## Deployment
+Frontend:
 
-First, build your app for production:
+- Remix
 
-```sh
-npm run build
-```
+Backend:
 
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
+- Golang - chi/fiber?

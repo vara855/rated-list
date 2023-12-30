@@ -6,7 +6,13 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import type { LinksFunction } from "@remix-run/react/dist/routeModules";
+import tailwindStyles from "./tailwind.css?url";
+import Page from "~/components/page";
 
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: tailwindStyles },
+];
 export default function App() {
   return (
     <html lang="en">
@@ -17,10 +23,12 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <Page>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </Page>
       </body>
     </html>
   );
